@@ -1,5 +1,3 @@
-import java.lang.Math;
-
 let rock = 'rock'
 let paper = 'paper'
 let scissors = 'scissors'
@@ -21,13 +19,20 @@ function compchoice(choice) {
     }
 }
 
-yours = prompt('Choose \'rock\', \'paper\', or \'scissors\'')
+
 
 function your_choice(pick) {
-if (yours == 'rock') {
-    let yours = 0
+yours = prompt('Choose \'rock\', \'paper\', or \'scissors\'')
+if (yours == 'rock') {  
+    return 'rock'
+}
+else if (yours == 'paper') {  
+    return 'paper'
+}
+else if (yours == 'scissors') {
+    return 'scissors'
 }
 }
 
 console.log('Computer\'s pick was', compchoice(num));
-console.log('Your choice was', )
+console.log('Your choice was', your_choice(yours))
